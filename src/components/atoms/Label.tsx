@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Label = () => {
+interface LabelProps extends React.LabelHTMLAttributes<HTMLLabelElement> {
+    className?: string
+}
+
+const Label = ({className, ...rest}: LabelProps) => {
     return (
-        <div>Label</div>
+        <label className={className} {...rest}/>
     )
 }
 export default Label

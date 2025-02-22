@@ -1,14 +1,13 @@
 import React from 'react'
 
-interface ButtonProps {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     text: string
 }
 
-const Button = ({ text }: ButtonProps) => {
+const Button = ({text, className, ...rest}: ButtonProps) => {
     return (
-            <button className="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                {text}
-            </button>
-)
+        <button className={className} {...rest}>{text}</button>
+    )
 }
+
 export default Button

@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-const Dashboard = () => {
-    return (
-        <div>Dashboard</div>
-    )
-}
-export default Dashboard
+const AdminDashboard: React.FC = () => {
+  return (
+    <div>
+      <h1>Admin Dashboard</h1>
+      {/* Admin panel içeriği */}
+    </div>
+  );
+};
+
+export default AdminDashboard;

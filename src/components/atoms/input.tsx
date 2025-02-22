@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Input = () => {
+interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+    className?: string
+}
+
+const Input = ({className, ...rest}: InputProps) => {
     return (
-        <div>Input</div>
+        <input className={className} {...rest}/>
     )
 }
 export default Input

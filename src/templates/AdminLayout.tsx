@@ -1,10 +1,11 @@
 import React from 'react';
 
-const AdminLayout = ({ children }: { children: React.ReactNode }) => {
+const AdminLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <>
-      <main>{children}</main>
-    </>
+    <div className="admin-layout">
+      <header className="bg-gray-800 text-white p-4">Admin Panel</header>
+      <main className="p-4">{children}</main>
+    </div>
   );
 };
 
