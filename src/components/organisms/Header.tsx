@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
     return (
-        <div>Header</div>
+        <div className="bg-red-600">Header</div>
     )
 }
 export default Header

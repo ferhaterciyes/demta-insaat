@@ -1,17 +1,18 @@
-import React from 'react'
-import Image from "next/image";
+import React from 'react';
+import Header from "@/components/organisms/Header";
+import Footer from "@/components/organisms/Footer";
+import About from "@/pages/about";
 
 const Home = () => {
     return (
-        <div>
-            <header>
-                <Image src="/next.svg" width={100} height={100} alt="Logo"/>
-            </header>
-            <main>
-                <h1>Home Page</h1>
-            </main>
-            <footer>Main Footer</footer>
-        </div>
+        <main>
+            <div className="bg-red-500 underline text-white p-4 text-lg">
+                Tailwind Çalışıyor mu?
+            </div>
+            <Header/>
+            <About/>
+            <Footer/>
+        </main>
     );
 };
 export default Home;
