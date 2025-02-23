@@ -2,7 +2,6 @@
 import MainLayout from "../templates/MainLayout";
 import AdminLayout from "../templates/AdminLayout";
 import { usePathname } from "next/navigation";
-import '../pages/style/globals.css';
 
 export default function RootLayout({
   children,
